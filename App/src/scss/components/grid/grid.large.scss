@@ -1,0 +1,30 @@
+$block: "comp";
+
+.#{$block} {
+  &__grid {
+    align-items: baseline;
+    .#{$block} {
+      &__item {
+        width: calc(100% / 5 - 5rem);
+        margin-right: 4rem;
+        margin-left: 4rem;
+        margin-bottom: 0;
+
+        .#{$block} {
+          &__img-wrapper {
+            width: calc(100% / 1.1);
+            height: 10rem;
+
+            &--balance {
+              width: calc(100% / 2.5);
+            }
+
+            &--outbox {
+              width: calc(100% / 1.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

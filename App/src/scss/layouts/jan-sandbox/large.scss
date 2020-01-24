@@ -1,0 +1,4 @@
+// Screensize: 1200px;
+@include large { 
+  @import "./card-grid/card-grid.large.scss";
+}

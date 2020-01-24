@@ -1,0 +1,90 @@
+$white: #FFFFFF;
+$greyWhite: #F6F6F6;
+
+$mango-tango: #FF8C42;
+
+$gray-darker:               #444444;
+$gray-dark:                 #696969;
+$gray:                      #999999;
+$gray-light:                #cccccc;
+$gray-lighter:              #ececec;
+$gray-lightest:             lighten($gray-lighter,4%);
+
+$white: #FFFFFF;
+$black: #000000;
+$dark_gray: lighten($black, 20%);
+$gray: lighten($black, 40%);
+$light_gray: lighten($black, 60%);
+
+$accent: rgb(236, 180, 76);
+
+$container_width: 1200px;
+
+
+$bp_s: 641px;
+$bp_m: 881px;
+$bp_l: 1200px;
+$bp_xl: 1540px;
+$bp_xxl: 1650px;
+
+
+$breakpoint-small: $bp_s;
+$breakpoint-medium: $bp_m;
+$breakpoint-large: $bp_l;
+$breakpoint-xlarge: $bp_xl;
+$breakpoint-xxlarge: $bp_xxl;
+
+// Space
+
+$bs: 2px;
+
+$space2: $bs * 2; 
+$space3: $space2 * 2; 
+$space4: $space3 * 2;
+$space5: $space4 * 2;
+$space:  $space5 * 2; 
+$space-mid: $space * 2;
+$space-large: $space-mid * 2;
+
+// Mixins & Functions
+
+// Function for converting a px based font-size to rem.
+@function rem-calc($size) {
+  $remSize: $size/ 16px;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: rem-calc($size);
+}
+
+// Font-Sizes
+
+$fs_t:   rem-calc(14px);
+$fs_b:   rem-calc(16px);
+
+$fs_s:   rem-calc(18px);
+$fs_s_2: rem-calc(20px);
+$fs_s_3: rem-calc(22px);
+
+$fs_m:   rem-calc(26px);
+$fs_m_2: rem-calc(28px);
+$fs_m_3: rem-calc(30px);
+
+$fs_l:   rem-calc(32px);
+$fs_l_2: rem-calc(34px);
+$fs_l_3: rem-calc(36px);
+
+$fs_xl:  rem-calc(38px);
+$fs_xxl: rem-calc(40px);
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+

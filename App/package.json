@@ -1,0 +1,50 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Dummy App",
+  "main": "Config.js",
+  "scripts": {
+    "dev-server": "live-server ../Core/Sandbox-01/public",
+    "ts-dev": "gulp _DEV_TS --env development",
+    "ts-prod": "gulp _PROD_TS --env production",
+    "scss-dev": "gulp _DEV_SCSS --env development",
+    "scss-prod": "gulp _PROD_SCSS --env production",
+    "pipe-dev-js": "gulp _JS_PIPE_DEV",
+    "pipe-dev-css": "gulp _CSS_PIPE_DEV",
+    "pipe-prod-js": "gulp _JS_PIPE_PROD",
+    "pipe-prod-css": "gulp _CSS_PIPE_PROD",
+    "p-prod-assets": "gulp _JS_PIPE_PROD && gulp _CSS_PIPE_PROD",
+    "p-dev-assets": "gulp _JS_PIPE_DEV && gulp _CSS_PIPE_DEV",
+    "mkdwn-json": "gulp _MKDWNJSON"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssbeautify": "^2.0.0",
+    "gulp-environments": "^1.0.0",
+    "gulp-exec": "^4.0.0",
+    "gulp-json-format": "^2.0.0",
+    "gulp-markdown-to-json": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "marked": "^0.8.0",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.40.2",
+    "webpack-stream": "^5.2.1",
+    "live-server": "^1.2.1"
+  },
+  "author": "John Tenezaca",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "rxjs": "^6.5.3"
+  }
+}

@@ -1,0 +1,41 @@
+$block: "comp";
+
+.#{$block} {
+  &__zGrid {
+    .#{$block} {
+      &__zgrid-container {
+        .#{$block} {
+          &__mtm-img {
+            width: calc(100% / 3);
+          }
+
+          &__mtm-quotes {
+            width: calc(100% / 3);
+            p {
+              width: rem-calc(400px);
+              line-height: rem-calc(32px);
+              font-size: rem-calc(22px);
+            }
+
+            .#{$block} {
+              &__quotes {
+                p {
+                  font-weight: bolder;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__read-more {
+    margin: $space auto;
+    p,a {
+      margin: 0;
+      font-size: rem-calc(22px);
+    }
+  }
+}

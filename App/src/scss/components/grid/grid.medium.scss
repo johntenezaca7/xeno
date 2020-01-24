@@ -1,0 +1,55 @@
+$block: "comp";
+
+.#{$block} {
+  &__grid {
+    .#{$block} {
+      &__item {
+        height: 26rem;
+
+        .#{$block} {
+          &__img-wrapper {
+            width: calc(100% / 2);
+            height: 7rem;
+
+            &--balance {
+              width: calc(100% / 4);
+            }
+          }
+          &__details-wrapper {
+
+            .#{$block} {
+              &__title {
+                font-size: rem-calc(20px);
+              }
+              &__copy {
+                width: rem-calc(300px);
+                font-size: rem-calc(18px);
+                margin-top: $space3;
+                line-height: rem-calc(30px);
+                text-align: center;
+
+                &--balance {
+                  width: rem-calc(350px);
+                }
+
+                &--outbox {
+                  width: rem-calc(300px);
+                }
+              }
+
+              &__read-more {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 0;
+
+                a {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+$block: "comp";
+
+.#{$block} {
+  &__zGrid {
+    .#{$block} {
+      &__zgrid-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        &--rl {
+          flex-direction: row-reverse;
+          align-items: center;
+        }
+
+        .#{$block} {
+          &__mtm-img {
+            width: calc(100% / 2.5);
+          }
+
+          &__mtm-quotes {
+            width: calc(100% / 2.2);
+            p {
+              width: rem-calc(400px);
+              line-height: rem-calc(32px);
+              font-size: rem-calc(18px);
+            }
+
+            .#{$block} {
+              &__quotes {
+                p {
+                  font-weight: bolder;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__read-more {
+    margin-bottom: $space;
+    width: 26rem;
+
+    p,a {
+      margin: 0;
+      font-size: rem-calc(18px);
+      width: 100%;
+    }
+  }
+}

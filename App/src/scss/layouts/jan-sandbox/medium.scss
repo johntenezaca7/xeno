@@ -1,0 +1,4 @@
+// Screensize: 881px
+@include medium { 
+  @import "./card-grid/card-grid.medium.scss";
+}

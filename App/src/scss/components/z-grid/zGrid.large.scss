@@ -1,0 +1,44 @@
+$block: "comp";
+
+.#{$block} {
+  &__zGrid {
+    .#{$block} {
+      &__zgrid-container {
+        .#{$block} {
+          &__mtm-img {
+            width: calc(100% / 2.2);
+          }
+
+          &__mtm-quotes {
+            width: calc(100% / 2.5);
+            p {
+              width: rem-calc(450px);
+              line-height: rem-calc(32px);
+              font-size: rem-calc(19px);
+            }
+
+            .#{$block} {
+              &__quotes {
+                p {
+                  font-weight: bolder;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__read-more {
+    margin: $space auto;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    p,a {
+      margin: 0;
+      font-size: rem-calc(20px);
+    }
+  }
+}

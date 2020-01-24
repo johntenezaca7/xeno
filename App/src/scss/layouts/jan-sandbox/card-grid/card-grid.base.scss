@@ -1,0 +1,39 @@
+$block: "card-grid";
+
+.#{$block} {
+  &__main-container {
+    width: 100%;
+    .#{$block} {
+      &__container-title {
+        margin: 1rem 2rem;
+        padding-bottom: .5rem;
+      }
+      &__grid-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+
+        .#{$block} {
+          &__item-container {
+            border: 1px solid black;
+            width: calc(100% / 2  );
+            margin: 1.5rem 2rem;
+            height: auto;
+
+            .#{$block} {
+              &__img-wrapper {
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

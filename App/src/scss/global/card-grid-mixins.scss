@@ -1,0 +1,89 @@
+@mixin background-cover(){
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+$radius: 3px;
+@mixin border-radius( $radius ){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$tl-radius: 3px; 
+$tr-radius: 3px; 
+$bl-radius: 3px; 
+$br-radius: 3px;
+
+@mixin border-radius-specific( $tl-radius, $tr-radius, $bl-radius, $br-radius ){
+  -webkit-border-radius: $tl-radius $tr-radius $bl-radius $br-radius ;
+  -moz-border-radius: $tl-radius $tr-radius $bl-radius $br-radius;
+  border-radius: $tl-radius $tr-radius $bl-radius $br-radius;
+}
+
+$h-shadow: 0px; 
+$v-shadow: 1px; 
+$blur: 2px; 
+$spread: 0px; 
+$color-a: fade($black, 15%);
+
+@mixin box-shadow(){
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color-a;
+  -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color-a;
+  box-shadow: $h-shadow $v-shadow $blur $spread $color-a;
+}
+
+
+$h-shadow: 0px; 
+$v-shadow: 1px; 
+$blur: 2px; 
+$spread: 0px; 
+$color-b: fade($black, 15%);
+
+@mixin inner-box-shadow( $h-shadow, $v-shadow, $blur, $spread, $color-b ){
+  -webkit-box-shadow: inset $h-shadow $v-shadow $blur $spread $color-b;
+  -moz-box-shadow: inset $h-shadow $v-shadow $blur $spread $color-b;
+  box-shadow: inset $h-shadow $v-shadow $blur $spread $color-b;
+}
+
+@mixin box-shadow-none(){
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+$property: all; 
+$duration: 0.3s; 
+$timing: linear; 
+$delay: 0s; 
+@mixin transitions(){
+  -webkit-transition: $property $duration $timing $delay;
+  -moz-transition: $property $duration $timing $delay;
+  -ms-transition: $property $duration $timing $delay;
+  -o-transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
+}
+
+
+$duration: 1s; 
+$timing_function: ease;
+@mixin animation( $animation_name, $duration, $timing_function ){
+  -webkit-animation: $animation_name $duration $timing_function;
+  -moz-animation: $animation_name $duration $timing_function;
+  -o-animation: $animation_name $duration $timing_function;
+  animation: $animation_name $duration $timing_function;
+}
+
+$property: border-box;
+@mixin box-size(){
+  -webkti-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin font-smoothing(){
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
